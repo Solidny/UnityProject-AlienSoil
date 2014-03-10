@@ -1,0 +1,16 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\LiftLogic.js">
+    <Files>
+      <File FileName="Assets\Scripts\DoorLogic.js" Line="49" Column="2" />
+      <File FileName="Assets\DayNightCycle\TOD\TOD.js" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\JavaScript\Layout.js" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\AdvancedAI_V2.js" Line="20" Column="1" />
+      <File FileName="Assets\LiftLogic.js" Line="24" Column="2" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

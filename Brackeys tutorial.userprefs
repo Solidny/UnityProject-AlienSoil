@@ -1,0 +1,18 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\UpgradeSystem.js">
+    <Files>
+      <File FileName="Assets\UpgradeSystem.js" Line="90" Column="9" />
+      <File FileName="Assets\CollisionHeat.js" Line="27" Column="1" />
+      <File FileName="Assets\Scripts\RespawnMenuV2.js" Line="49" Column="32" />
+      <File FileName="Assets\Scripts\MeleeSystem.js" Line="40" Column="92" />
+      <File FileName="Assets\Scripts\WeaponSwitch.js" Line="18" Column="39" />
+      <File FileName="Assets\WeaponAvailable.js" Line="12" Column="26" />
+      <File FileName="Assets\Heating.js" Line="12" Column="6" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
