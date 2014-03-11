@@ -105,7 +105,7 @@ Material:
       data:
         first:
           name: _Tint
-        second: {r: .513492048, g: .536210001, b: .581079602, a: 0}
+        second: {r: .441142112, g: .478163421, b: .546162486, a: 0}
 --- !u!1002 &2100001
 EditorExtensionImpl:
   serializedVersion: 6
