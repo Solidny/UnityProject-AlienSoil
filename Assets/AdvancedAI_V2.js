@@ -1,8 +1,8 @@
 ﻿var Distance;
 var Target : Transform;
-var lookAtDistance = 25.0;
-var attackRange = 1.5;
-var chaseRange = 15.0;
+var lookAtDistance = 45.0;
+var attackRange = 5;
+var chaseRange = 25.0;
 var moveSpeed = 5.0;
 var Damping = 6.0;
 var attackRepeatTime = 1;
@@ -16,6 +16,7 @@ private var moveDirection : Vector3 = Vector3.zero;
 function Start ()
 {
 	attackTime = Time.time;
+	animation.Play("Take 001");
 }
 
 function Update ()
