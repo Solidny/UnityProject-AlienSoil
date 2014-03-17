@@ -16,7 +16,7 @@ private var moveDirection : Vector3 = Vector3.zero;
 function Start ()
 {
 	attackTime = Time.time;
-	animation.Play("Take 001");
+	animation.Play("RobIdle");
 }
 
 function Update ()
@@ -31,7 +31,7 @@ function Update ()
 		}
 		if (Distance > lookAtDistance)
 		{
-			renderer.material.color = Color.green;
+			animation.Play("RobIdle");
 		}
 		if (Distance < attackRange)
 		{
@@ -47,16 +47,15 @@ function lookAt ()
 {
 	var rotation = Quaternion.LookRotation(Target.position - transform.position);
 	transform.rotation = Quaternion.Slerp(transform.rotation, rotation, Time.deltaTime * Damping);
-	renderer.material.color = Color.yellow;
+	
 }
 function chase ()
 {
-	renderer.material.color = Color.red;
-	
+
 	moveDirection = transform.forward;
 	moveDirection *= moveSpeed;
 	moveDirection.y -= gravity * Time.deltaTime;
-	
+	animation.CrossFade("RobMove");
 	controller.Move(moveDirection * Time.deltaTime);
 	
 }
@@ -67,6 +66,7 @@ function attack ()
 		Target.SendMessage("ApplyDamage", Damage);
 		Debug.Log("Enemy Attack");
 		attackTime = Time.time + attackRepeatTime;
+		animation.CrossFade("RobAttack");
 	}
 }
 

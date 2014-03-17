@@ -14,24 +14,10 @@ function Start ()
 function Update ()
 {
 	if(Input.GetButtonDown("Fire1"))
-		{
-			// Attack animation
-			animation.Play("Attack");
-			
-		
-		}
-	if (animation.isPlaying == false)
-		{
-		animation.CrossFade("Idle");
-		}
-	if (Input.GetKey(KeyCode.LeftShift))
-		{
-		animation.CrossFade("Sprint");
-		}
-	if (Input.GetKeyUp(KeyCode.LeftShift))
-		{
-		animation.CrossFade("Idle");
-		}
+	{
+		AttackDamage();
+		print("damage player");
+	}
 
 }
 function AttackDamage ()
