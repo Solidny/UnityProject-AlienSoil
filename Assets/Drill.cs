@@ -1,13 +1,14 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Attack : MonoBehaviour 
+//CHANGE attack to Drill
+public class Drill : MonoBehaviour 
 {
 	
 	[SerializeField]
 	private Animator animator;
 	[SerializeField]
-	private float DirectionDampTime = .25f;
+	float DirectionDampTime = .01f;
 
 		
 		
@@ -30,11 +31,11 @@ public class Attack : MonoBehaviour
 		{
 			if (Input.GetButton("Fire1"))
 			{
-				animator.SetBool ("Attack", true);	
+				animator.SetFloat ("Drill", 1, DirectionDampTime, Time.deltaTime);
 			}
 			else 
 			{
-				animator.SetBool ("Attack", false);		
+				animator.SetFloat ("Drill", 0, DirectionDampTime, Time.deltaTime);	
 			}
 		}
 	}

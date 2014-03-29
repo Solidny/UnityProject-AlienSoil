@@ -11,8 +11,8 @@ var MaxOxygen : int = 100;
 var oxygenWaste : float;
 var oxygenRate : int = 1;
 // controls variables
-var lookAround01 : MouseLook;
-var lookAround02 : MouseLook;
+//var lookAround01 : MouseLook;
+//var lookAround02 : MouseLook;
 var charController : CharacterController;
 private var noAir = true;
 //var only for shop
@@ -31,8 +31,8 @@ function Start ()
 	Oxygen = MaxOxygen;
 	oxygenWaste = Time.time;
 	// Link to controls 
-	lookAround01 = gameObject.GetComponent(MouseLook);
-	lookAround02 = GameObject.Find("MainCamera").GetComponent(MouseLook);
+	//lookAround01 = gameObject.GetComponent(MouseLook);
+	//lookAround02 = GameObject.Find("MainCamera").GetComponent(MouseLook);
 	charController = gameObject.GetComponent(CharacterController);
 }
 function Update ()
@@ -143,8 +143,8 @@ function DamageUp(Price : int)
 //Turning controls off while in menu
 function Menu()
 {
-	lookAround01.enabled = false;
-	lookAround02.enabled = false;
+//	lookAround01.enabled = false;
+//	lookAround02.enabled = false;
 	charController.enabled = false;
 	gameObject.SendMessage("TurnOff", SendMessageOptions.DontRequireReceiver);
 }
@@ -152,8 +152,8 @@ function Menu()
 function MenuOff()
 {
 	gameObject.SendMessage("TurnOn", SendMessageOptions.DontRequireReceiver);
-	lookAround01.enabled = true;
-	lookAround02.enabled = true;
+//	lookAround01.enabled = true;
+//	lookAround02.enabled = true;
 	charController.enabled = true;
 }
 function Breath()

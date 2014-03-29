@@ -63,16 +63,18 @@ function attack ()
 {
 	if (Time.time > attackTime)
 	{
-		Target.SendMessage("ApplyDamage", Damage);
 		Debug.Log("Enemy Attack");
 		attackTime = Time.time + attackRepeatTime;
-		animation.CrossFade("RobAttack");
+		animation.CrossFade("RobAttack1");
 	}
 }
-
-function ApplyDamage ()
+function hit ()
 {
-	chaseRange += 30;
-	moveSpeed += 2;
-	lookAtDistance += 40;
+	Target.SendMessage("ApplyDamage", Damage);
 }
+//function ApplyDamage ()
+//{
+//	chaseRange += 30;
+//	moveSpeed += 2;
+//	lookAtDistance += 40;
+//}

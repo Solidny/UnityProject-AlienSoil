@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 9282efe99328e3949a79a2491e6408bc
+guid: 803e9575d4bc3c847873c79abe839553
 ModelImporter:
   serializedVersion: 15
   fileIDToRecycleName:
@@ -162,12 +162,7 @@ ModelImporter:
     400154: ring_CONTROL_L
     400156: thumb_CONTROL_L
     4300000: cosmoWorker
-    7400000: CosmoIdle
-    7400002: CosmoWalk
-    7400004: CosmoRun
-    7400006: CosmoJump
-    7400008: CosmoAttack
-    7400010: CosmoAtt
+    7400000: CosmoDrill
     9500000: //RootNode
     13700000: cosmoWorker
   materials:
@@ -177,85 +172,22 @@ ModelImporter:
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
-    animationCompression: 0
+    animationCompression: 1
     animationRotationError: .5
     animationPositionError: .5
     animationScaleError: .5
     animationWrapMode: 0
     clipAnimations:
-    - name: CosmoIdle
+    - name: CosmoDrill
       takeName: Take 001
-      firstFrame: 82
-      lastFrame: 222
+      firstFrame: 231
+      lastFrame: 241
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
       loop: 0
       loopBlend: 1
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      transformMask: []
-    - name: CosmoWalk
-      takeName: Take 001
-      firstFrame: 0
-      lastFrame: 40
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      loopBlend: 1
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      transformMask: []
-    - name: CosmoRun
-      takeName: Take 001
-      firstFrame: 41
-      lastFrame: 81
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      loopBlend: 1
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      transformMask: []
-    - name: CosmoJump
-      takeName: Take 001
-      firstFrame: 69
-      lastFrame: 81
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
       loopBlendPositionXZ: 0
